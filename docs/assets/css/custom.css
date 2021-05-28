@@ -22,3 +22,12 @@ body .markdown-section {
     text-decoration: underline;
 }
 */
+
+.cover .cover-main>p:last-child a {
+    background: var(--cover-button-primary-background, var(--cover-button-background));
+    -webkit-text-decoration: var(--cover-button-primary-text-decoration, var(--cover-button-text-decoration));
+    text-decoration: var(--cover-button-primary-text-decoration, var(--cover-button-text-decoration));
+    -webkit-text-decoration-color: var(--cover-button-primary-text-decoration-color, var(--cover-button-text-decoration-color));
+    text-decoration-color: var(--cover-button-primary-text-decoration-color, var(--cover-button-text-decoration-color));
+    color: var(--cover-button-primary-color, var(--cover-button-color));
+}
