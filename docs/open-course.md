@@ -10,7 +10,7 @@
 
 📸 Docsify Open Course Screenshots
 ---
-![ Docsify Open Course Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_kokhsfk1.png)
+![ Docsify Open Course Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_kud8xtd3.png)
 _Figure 1. Docsify Open Course Starter Kit. Explore a demo at [hibbitts-design.github.io/demo-docsify-open-course-starter-kit/](https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/)_
 
 🚀 GitHub Pages Quickstart
@@ -21,7 +21,7 @@ _Figure 1. Docsify Open Course Starter Kit. Explore a demo at [hibbitts-design.g
 
 **Installation and Deployment**
 
-1. Tap **Use this template** on the source repository (upper-right green button)
+1. Tap **Use this template** on the source repository (upper-right green button) and then choose **Create a new repository**
 ![ Docsify Open Course Starter Kit - Install Page 1](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-oc-install-1.png)
 
 2. Choose the name for your new repository to contain the copied site files and then tap **Create repository from template**
@@ -64,7 +64,7 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 3. Tap the **Pencil Icon** (top left-hand toolbar area) to start the editor
 ![ Docsify Open Course Starter Kit - “Edit this Page” Link 4](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-oc-gitlink-4.png)
 
-4. Find the line `var yourRepoURL = '';` and enter the URL of your own GitHub Repository in between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
+4. Find the line `var gitLinkRepoURL = '';` and enter the URL of your own GitHub Repository between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 ![ Docsify Open Course Starter Kit - “Edit this Page” Link 5](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-oc-gitlink-5.png)
 
 💻 Locally Editing Your Docsify Site Pages
@@ -80,32 +80,87 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 
 You can also clone (i.e download) a copy of your repository to your computer and [run Docsify locally](https://docsify.js.org/#/quickstart) to preview your site. See the below video for details.
 
-🖼 Embedding your Docsify Page Content into Other Systems
+🧩 Embedding your Docsify Page Content into Other Systems
 ---  
 
 ![ Docsify Open Course Page Embedded into the Canvas LMS](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-oc-canvas.png)
 _Figure 2. Docsify Open Course Page Embedded into the Canvas LMS. Explore an example Canvas LMS course using Docsify Open Course pages for content at [https://canvas.sfu.ca/courses/44038/](https://canvas.sfu.ca/courses/44038)_
 
-The optional ‘embedded’ (all lowercase) URL parameter hides a site’s sidebar and optional navbar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams etc.
+The optional `embedded` (all lowercase) URL parameter hides a site’s sidebar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams or being displayed in an existing or new Browser tab. The parameter `standalone` is supported as an alias for `embedded`.
 
 To only display Docsify page content, add the following to a Docsify page URL:
 
 `?embedded=true`
 
-For example, https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources would display a standard Docsify page while https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true would only display page content (i.e., no sidebar or optional navbar is shown).
+Example standard Docsify page:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources  
+
+Example Docsify page displaying only page content (i.e., no sidebar is shown):  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true  
+
+To optionally show a page Table of Contents (based on included Headers), use the following:
+
+`?embedded=true&toc=true`
+
+Example Docsify page displaying only page content:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true  
+
+Example Docsify page displaying only page content with a page Table of Contents included:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true&toc=true  
+
+To optionally override the hiding of the navbar when displaying only page content, use the following:
+
+`?embedded=true&navbar=true`
+
+Example Docsify page displaying only page content:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true  
+
+Example Docsify page displaying only page content with the navbar still displayed:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true&navbar=true  
 
 To optionally hide the 'Edit this Page' link, use the following:
 
 `?embedded=true&hidegitlink=true`
 
-For example, https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources would display a standard Docsify page while https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true&hidegitlink=true would only display page content (i.e., no sidebar or optional navbar is shown) and also hide the 'Edit this Page' link.
+Example Docsify page displaying only page content:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true  
 
-🌐 Using an LMS to Host a Docsify Open Course Site
+Example Docsify page displaying only page content with the 'Edit this Page' link hidden:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true&hidegitlink=true  
+
+To optionally show the footer ('_footer.md' file), use the following:
+
+`?embedded=true&footer=true`
+
+Example Docsify page without footer:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true  
+
+Example Docsify page with footer shown:  
+https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/resources?embedded=true&footer=true  
+
+🖼 Presenting your Docsify Page Content as Standalone Webpages
+---  
+
+In addition to using URL parameters when embedding Docsify page content into other systems, it is possible to permanently display all pages as standalone, and to also always display a page Table of Contents.
+
+**To Display all Pages as Standalone**
+1. Open the `index.html` file for editing.
+2. Locate the line `var standalone = false;` and change it to `var standalone = true;`.
+3. Save the `index.html` file and reload site.
+
+**To Display Page Table of Contents**
+1. Open the `index.html` file for editing.
+2. Locate the line `var ToC = false;` and change it to `var showToC = true;`.
+3. Save the `index.html` file and reload site.
+
+Please note a page must have a series of Headings (#, ##, ###) for the Table of Contents to be displayed correctly.
+
+🛠 Using an LMS to Host a Docsify Open Course Site
 ---
 
 As Docsify Open Course Starter Kit does not require a web server, it can actually be hosted on many LMSs that support file libraries such as Canvas and Moodle.
 
-For example, here is a [Docsify Open Course Site hosted within a Canvas course](https://canvas.sfu.ca/courses/44038/files/15884796/download) and here is a [Docsify Open Course Site hosted within a Moodle course](https://paulhibbitts.net/moodle/mod/resource/view.php?id=25). Single Docsify Open Course site pages can also be embedded while hosted on the same system.
+For example, here is a [Docsify Open Course Site hosted within a Canvas course](https://canvas.sfu.ca/courses/44038/files/15884796/download). Single Docsify Open Course site pages can also be embedded while hosted on the same system.
 
 **Hosting a Docsify Open Course Site on your LMS**
 1. Tap **Download** on your repository page
@@ -121,9 +176,171 @@ For example, here is a [Docsify Open Course Site hosted within a Canvas course](
 [Docsify Documentation](https://docsify.js.org/#/?id=docsifyg)  
 [Docsify Basics by MichaelCurrin](https://michaelcurrin.github.io/docsify-js-tutorial/#/?id=docsify-basics)  
 
+**Docsify Themable**  
+[Docsify Themeable Documentation](https://jhildenbiddle.github.io/docsify-themeable/#/introduction)  
+[Docsify Themeable GitHub](https://github.com/jhildenbiddle/docsify-themeable)  
+
 **Markdown**  
-[Markdown Cheat Sheet](https://warpedvisions.org/projects/markdown-cheat-sheet/)  
+[Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)  
 [Markdown Guide](https://www.markdownguide.org/)  
+
+🧰 Useful Markdown CSS Classes
+---
+
+`badge`  
+
+```html
+<span class='badge'> Tue Jun 12th 11:59pm PDT</span>
+```
+
+```html
+<span class='badge'> [Tue May 16 2:30pm PT](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>  
+```
+
+`banner-image`  
+
+```markdown
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
+```
+
+`banner-tall-image`  
+
+```markdown
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
+```
+
+`button`  
+
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
+```
+
+`embedly-card` (for linked article previews, embedded slides/videos, etc.)  
+
+```markdown
+<a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
+```
+
+`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
+
+```markdown
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
+```
+
+`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
+
+```markdown
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
+```
+
+`header-image-fade` (suggested width of 1200px to 2000px)  
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=header-image-fade')
+```
+
+`header-image-full-width` (suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available)  
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=header-image')
+```
+
+`image-75` (scale image to 75%)
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-75')
+```
+
+`image-50` (scale image to 50%)
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-50')
+```
+
+`image-25` (scale image to 25%)
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-25')
+```
+
+`image-75-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-75-border')
+```
+
+`image-50-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-50-border')
+```
+
+`image-25-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-25-border')
+```
+
+`image-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-border')
+```
+
+`image-border-rounded`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-border-rounded')
+```
+
+`navpill`
+
+```markdown
+[GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
+```
+
+```html
+<a class="navpill" href="https://github.com" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+```
+
+`row` & `column`  
+
+```html
+<div class="row">
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+</div>
+```
+
+`video-container-4by3`  
+
+```html
+<div class="video-container-4by3"><div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
+```
+
+`video-container-16by9`  
+Automatically added to all iFrames with the source domains 'youtube.com' or 'docs.google.com'.  
+```html
+<div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
+```
+
+🌐 Using MAMP to View Docsify Sites Locally
+---
+
+An alternative to installing Docsify locally (as described following this section) is to use MAMP to view your Docsify sites locally on your own computer.
+
+1. Download [MAMP](https://www.mamp.info/)
+2. Move your local Docsify site to the **htdocs** folder of MAMP
+3. Turn MAMP on, tap **WebStart** and then tap **My Website**
+4. Tap on the folder containing your local Docsify site and then tap on the **docs** folder
 
 📼 Video Walkthrough of Local Docsify Install/Config
 ---
